@@ -8,7 +8,11 @@ class Square:
     """Square class"""
 
     def __init__(self, width=0, height=0):
-        """Initializer"""
+        """
+        Initializer
+        @width: Square width
+        @height: Square height
+        """
         self.width = width
         self.height = height
 
