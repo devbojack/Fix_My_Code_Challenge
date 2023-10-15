@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: [:index]
-  
+
   def index
     @posts = Post.all.order('created_at DESC')
   end
@@ -30,7 +30,7 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
 
-    if @post.update(params[:post].permit(:title, :body))
+    if @post.update(post_params)
       redirect_to @post
     else
       render 'edit'
@@ -44,8 +44,14 @@ class PostsController < ApplicationController
     redirect_to root_path
   end
 
+  def toggle_online
+    @post = Post.find(params[:id])
+    @post.toggle_online
+    redirect_to @post
+  end
+
   private
-    def post_params
-      params.require(:post).permit(:title, :body)
-    end
+  def post_params
+    params.require(:post).permit(:title, :body)
+  end
 end
