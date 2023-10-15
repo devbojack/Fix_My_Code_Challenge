@@ -38,10 +38,11 @@ class Square:
         @self: Instance
         Return: Instance object rep
         """
-        return (f"{self.width} {self.height}")
+        return (f"{self.width}, {self.height}")
 
 
 if __name__ == "__main__":
+    """Main call """
     s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
