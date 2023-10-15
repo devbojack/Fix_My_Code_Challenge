@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-'''
+"""
 Square class with with and height
-'''
+"""
 
 
 class Square:
@@ -22,7 +22,7 @@ class Square:
         @self: Instance
         Return: Square area
         """
-        return self.width * self.height
+        return (self.width * self.height)
 
     def perimiter_of_my_square(self):
         """
@@ -30,7 +30,7 @@ class Square:
         @self: Instance
         Return: Perimeter
         """
-        return (self.width * 4)
+        return ((self.width + self.height) * 2)
 
     def __str__(self):
         """
@@ -38,7 +38,7 @@ class Square:
         @self: Instance
         Return: Instance object rep
         """
-        return f"{self.width} {self.height}"
+        return (f"{self.width} {self.height}")
 
 
 if __name__ == "__main__":
