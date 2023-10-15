@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+'''
+Square class with with and height
+'''
+
 
 class square():
 
