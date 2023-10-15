@@ -6,7 +6,6 @@ Square class with with and height
 
 class Square:
     """Square class"""
-
     def __init__(self, width=0, height=0):
         """
         Initializer
@@ -26,7 +25,7 @@ class Square:
 
     def __str__(self):
         """class string"""
-        return "{}/{}".format(self.width, self.height)
+        return f"{self.width} {self.height}"
 
 
 if __name__ == "__main__":
