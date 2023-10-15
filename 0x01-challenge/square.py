@@ -5,8 +5,10 @@ Square class with with and height
 
 
 class Square:
+    """Square class"""
 
     def __init__(self, width=0, height=0):
+        """Initializer"""
         self.width = width
         self.height = height
 
