@@ -4,7 +4,7 @@ Square class with with and height
 '''
 
 
-class square:
+class Square:
 
     def __init__(self, width=0, height=0):
         self.width = width
@@ -15,9 +15,11 @@ class square:
         return self.width * self.height
 
     def PermiterOfMySquare(self):
+        """Permiter of the square"""
         return (self.width * 4)
 
     def __str__(self):
+        """class string"""
         return "{}/{}".format(self.width, self.height)
 
 
