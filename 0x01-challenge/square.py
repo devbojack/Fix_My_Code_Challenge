@@ -4,7 +4,7 @@ Square class with with and height
 '''
 
 
-class square():
+class square:
 
     def __init__(self, width=0, height=0):
         self.width = width
